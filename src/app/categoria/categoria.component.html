@@ -1,0 +1,444 @@
+<section class="container top-products">
+    <h1 class="heading-1">Mejores Productos</h1>
+
+    <div class="container-options">
+        <span class="active">Destacados</span>
+        <span>Más recientes</span>
+        <span>Mejores Vendidos</span>
+    </div>
+
+    <div class="container-products">
+        <!-- Productos -->
+        <div class="card-product" *ngFor="let item of libros; index as i">
+
+            <div class="container-img">
+                <img src="{{ item.imgUrl }}" />
+                <span class="discount">-13%</span>
+                <div class="button-group">
+                    <span>
+                        <i class="fa-regular fa-eye"></i>
+                    </span>
+                    <span>
+                        <i class="fa-regular fa-heart"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="content-card-product">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+
+                <h3>{{ item.titulo }}</h3>
+                <span class="add-cart">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </span>
+                <p class="price">${{(i+1) * 3.25}} <span>${{ (i+1) * 3.5 }}</span></p>
+            </div>
+
+        </div>
+
+        <!--
+        <div class="card-product">
+            <div class="container-img">
+                <img src="./assets/img/habitosatomicos.jpg"/>
+                <span class="discount">-13%</span>
+                <div class="button-group">
+                    <span>
+                        <i class="fa-regular fa-eye"></i>
+                    </span>
+                    <span>
+                        <i class="fa-regular fa-heart"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="content-card-product">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <h3>Hábitos Atómicos</h3>
+                <span class="add-cart">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </span>
+                <p class="price">$4.60 <span>$5.30</span></p>
+            </div>
+        </div>
+        -->
+
+        <!-- Producto 2 
+        <div class="card-product">
+            <div class="container-img">
+                <img src="./assets/img/elprincipito.jpg" />
+                <span class="discount">-22%</span>
+                <div class="button-group">
+                    <span>
+                        <i class="fa-regular fa-eye"></i>
+                    </span>
+                    <span>
+                        <i class="fa-regular fa-heart"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="content-card-product">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <h3>El Principito</h3>
+                <span class="add-cart">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </span>
+                <p class="price">$5.70 <span>$7.30</span></p>
+            </div>
+        </div>
+        -->
+
+        <!-- 
+        <div class="card-product">
+            <div class="container-img">
+                <img src="./assets/img/segundaguerra.jpg"/>
+                <div class="button-group">
+                    <span>
+                        <i class="fa-regular fa-eye"></i>
+                    </span>
+                    <span>
+                        <i class="fa-regular fa-heart"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="content-card-product">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3>La segunda guerra mundial</h3>
+                <span class="add-cart">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </span>
+                <p class="price">$3.20</p>
+            </div>
+        </div>
+       
+        <div class="card-product">
+            <div class="container-img">
+                <img src="./assets/img/REVOLUCION.jpg"/>
+                <div class="button-group">
+                    <span>
+                        <i class="fa-regular fa-eye"></i>
+                    </span>
+                    <span>
+                        <i class="fa-regular fa-heart"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="content-card-product">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <h3>Revolución</h3>
+                <span class="add-cart">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </span>
+                <p class="price">$5.60</p>
+            </div>
+        </div>
+         -->
+    </div>
+
+    <!--
+    <div class="container-products">
+        
+        <div class="card-product">
+            <div class="container-img">
+                <img src="./assets/img/queso.jpg"/>
+                <span class="discount">-35%</span>
+                <div class="button-group">
+                    <span>
+                        <i class="fa-regular fa-eye"></i>
+                    </span>
+                    <span>
+                        <i class="fa-regular fa-heart"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="content-card-product">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <h3>¿Quién se ha llevado mi queso?</h3>
+                <span class="add-cart">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </span>
+                <p class="price">$4.60 <span>$5.30</span></p>
+            </div>
+        </div>
+        
+        <div class="card-product">
+            <div class="container-img">
+                <img src="./assets/img/decapitado.jpg" />
+                <span class="discount">-22%</span>
+                <div class="button-group">
+                    <span>
+                        <i class="fa-regular fa-eye"></i>
+                    </span>
+                    <span>
+                        <i class="fa-regular fa-heart"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="content-card-product">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <h3>El secreto del decapitado</h3>
+                <span class="add-cart">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </span>
+                <p class="price">$5.70 <span>$7.30</span></p>
+            </div>
+        </div>
+        
+        <div class="card-product">
+            <div class="container-img">
+                <img src="./assets/img/mar.jpg"/>
+                <div class="button-group">
+                    <span>
+                        <i class="fa-regular fa-eye"></i>
+                    </span>
+                    <span>
+                        <i class="fa-regular fa-heart"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="content-card-product">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3>El diablo y el mar oscuro </h3>
+                <span class="add-cart">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </span>
+                <p class="price">$3.20</p>
+            </div>
+        </div>
+        
+        <div class="card-product">
+            <div class="container-img">
+                <img src="./assets/img/psicologia.jpg"/>
+                <div class="button-group">
+                    <span>
+                        <i class="fa-regular fa-eye"></i>
+                    </span>
+                    <span>
+                        <i class="fa-regular fa-heart"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="content-card-product">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <h3>Manipulación y Psicología Oscura</h3>
+                <span class="add-cart">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </span>
+                <p class="price">$5.60</p>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <!--
+    <div class="container-products">
+        
+        <div class="card-product">
+            <div class="container-img">
+                <img src="./assets/img/mapa.jpg"/>
+                <span class="discount">-13%</span>
+                <div class="button-group">
+                    <span>
+                        <i class="fa-regular fa-eye"></i>
+                    </span>
+                    <span>
+                        <i class="fa-regular fa-heart"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="content-card-product">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <h3>Mapa de Sal y Estrellas</h3>
+                <span class="add-cart">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </span>
+                <p class="price">$4.60 <span>$5.30</span></p>
+            </div>
+        </div>
+       
+        <div class="card-product">
+            <div class="container-img">
+                <img src="./assets/img/invierno.jpg" />
+                <span class="discount">-22%</span>
+                <div class="button-group">
+                    <span>
+                        <i class="fa-regular fa-eye"></i>
+                    </span>
+                    <span>
+                        <i class="fa-regular fa-heart"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="content-card-product">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <h3>El Invierno más Largo </h3>
+                <span class="add-cart">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </span>
+                <p class="price">$5.70 <span>$7.30</span></p>
+            </div>
+        </div>
+        
+        <div class="card-product">
+            <div class="container-img">
+                <img src="./assets/img/orden.jpg"/>
+                <div class="button-group">
+                    <span>
+                        <i class="fa-regular fa-eye"></i>
+                    </span>
+                    <span>
+                        <i class="fa-regular fa-heart"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="content-card-product">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3>La Magia del Orden</h3>
+                <span class="add-cart">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </span>
+                <p class="price">$3.20</p>
+            </div>
+        </div>
+       
+        <div class="card-product">
+            <div class="container-img">
+                <img src="./assets/img/ahora.jpg"/>
+                <div class="button-group">
+                    <span>
+                        <i class="fa-regular fa-eye"></i>
+                    </span>
+                    <span>
+                        <i class="fa-regular fa-heart"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="content-card-product">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <h3>El Poder del Ahora</h3>
+                <span class="add-cart">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </span>
+                <p class="price">$5.60</p>
+            </div>
+        </div>
+    </div>
+    -->
+    
+
+</section>
